@@ -91,11 +91,12 @@ body {
 .mynavbar .navbar-brand,
  .mynavbar .offcanvas-title {
  font-family: 'Sacramento', cursive;
- font-size: 2.2rem;
+ font-size: 1.2rem;
  font-weight: bold;
 }
 
 .mynavbar .nav-link {
+  
   text-transform: uppercase;
 }
 
@@ -233,14 +234,25 @@ body {
         font-size: 2rem;
         text-align: center;
     }
-}
-/* hp */
-@media (max-width: 576px){
+
+    .sticky-top {
+      overflow: hidden;
+    }
+  }
+  /* hp */
+  @media (max-width: 576px){
     html {
-        font-size: 60%;
+      font-size: 60%;
     }
     .simply-countdown>.simply-section {
-        padding: 30px;
-        margin: 3px;
-      }
+      padding: 30px;
+      margin: 3px;
+    }
+    .mynavbar .nav-link {
+      font-size: 1rem;
+      text-align: center;
+    }
+    .sticky-top {
+      overflow: hidden;
+    }
 }
