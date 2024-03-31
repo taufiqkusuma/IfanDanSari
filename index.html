@@ -184,6 +184,22 @@
             },
             
         })
-        </script>      
+        </script>   
+        
+        <script>
+         const humburger = document.querySelector('.navbar-toggler');
+         const stickytop = document.querySelector('.sticky-top');
+         const offcanvas = document.querySelector('.offcanvas')
+
+         offcanvas.addEventListener('show.bs.offcanvas' ,function () {
+           stickytop.style.overflow = 'visible';
+         }) 
+         
+
+         offcanvas.addEventListener('hidden.bs.offcanvas' ,function () {
+           stickytop.style.overflow = 'hidden';
+         }) 
+         
+         </script>
    </body>
 </html>
